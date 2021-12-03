@@ -2,18 +2,18 @@
 
 _pkgname=embulk
 pkgname=$_pkgname-bin
-pkgver=0.8.33
-pkgrel=2
+pkgver=0.9.24
+pkgrel=1
 pkgdesc="Pluggable Bulk Data Loader."
 arch=('i686' 'x86_64')
-url="https://github.com/treasure-data/digdag"
+url="https://github.com/embulk/embulk"
 license=('Apache')
 depends=('jdk8-openjdk' 'nodejs')
 
-_dl_url=https://dl.bintray.com/embulk/maven
-source_i686=("$_dl_url/$_pkgname-$pkgver.jar"
+_dl_url=https://github.com/embulk/embulk/releases/download
+source_i686=("$_dl_url/v$pkgver/$_pkgname-$pkgver.jar"
 )
-source_x86_64=("$_dl_url/$_pkgname-$pkgver.jar"
+source_x86_64=("$_dl_url/v$pkgver/$_pkgname-$pkgver.jar"
 )
 md5sums_i686=('SKIP'
 )
